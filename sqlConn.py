@@ -1,6 +1,6 @@
 from operator import indexOf
 from unicodedata import decimal
-import mysql.connnector
+import mysql.connector
 import uuid
 from datetime import datetime
 from cryptography.fernet import Fernet
@@ -120,7 +120,7 @@ def getSignUpInfo():
     else:
         signUp(username, password)
 def main():   
-    '''# this will create a label widget
+    # this will create a label widget
     l1 = Label(root, text = "Username:")
     l2 = Label(root, text = "Password:")
     
@@ -155,9 +155,7 @@ def main():
     b2 = Button(root, text="Sign Up", command = getSignUpInfo,)
     b2.grid(row = 8, column = 1, pady = 4)
     
-    root.mainloop()'''   
-    client.execute("SELECT COUNT(password) FROM login_data")
-    print(client.fetchone())
+    root.mainloop()
       
 e1 = Entry(root)
 e2 = Entry(root)
